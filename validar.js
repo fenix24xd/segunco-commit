@@ -10,6 +10,8 @@ function validar (){
   expresion =/\w+@\w+\.+[a-z]/;
 
   
+
+  
   if(nombre==="" || apellidos=== "" || correo==="" || usuario==="" ||clave==="" ||telefono===""){
       alert("todos los capos son obligatorios ");
       return false ;
