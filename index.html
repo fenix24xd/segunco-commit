@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <title> formulario de registro </title>
     <link rel="stylesheet" href="estilos.css">
+    <script>src="validar.js"</script>
 </head>
 <body>
     <h1> FORMULARIO DE REGISTRO   </h1>
-     <form action="registro.php" method="post" 
-     class="form-register"> 
+     <form action="registro.php" method="post" class="form-register" onsubmit="return validar();">
          <h2 class="form__titulo">crea una cuenta</h2>
          <div  class="contenedor-inputs">
-             <input type="text" name="Nombre" placeholder="Nombre" class="input-48" required>
-             <input type="text" name="Apellido" placeholder="Apellido" class="input-48" required>
-             <input type="email" name="Correo" placeholder="Correo" class="input-100" required>
-             <input type="text" name="Usuario" placeholder="Usuario" class="input-48" required>
-             <input type="password" name="Clave" placeholder="Contraseña" class="input-48" required>
-             <input type="text" name="Telefono" placeholder="Telefono"  class="input-100" required>
+             <input type="text"  id="Nombre" name="Nombre" placeholder="Nombre" class="input-48" required>
+             <input type="text" id="Apellido" name="Apellido" placeholder="Apellido" class="input-48" required>
+             <input type="email"  id="Correo" name="Correo" placeholder="Correo" class="input-100" required>
+             <input type="text"  id="Usuario" name="Usuario" placeholder="Usuario" class="input-48" required>
+             <input type="password" id="Clave" name="Clave" placeholder="Contraseña" class="input-48" required>
+             <input type="text" id="Telefono" name="Telefono" placeholder="Telefono"  class="input-100" required>
              <input type="submit" values="Registrar" class="btn-enviar">
              <p class="form__link">¿ya tienes una cuenta ? <a href="#"> ingresa aqui
              </a> </p>
